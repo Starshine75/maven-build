@@ -1,0 +1,22 @@
+def gv
+
+pipeline {
+    agent any
+    parameters {
+        choice(name: 'VERSION', )
+    }
+    stages {
+        stage("build") {
+            script {
+                
+            }
+
+        }
+
+        stage("test") {
+            steps {
+                echo 'Testing for errors....'
+            }
+        }
+    }
+}
